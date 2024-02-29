@@ -4,13 +4,13 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family:  Helvetica;
     line-height: 1.6;
-    color: #ffffff;
+    color: #6e6e73;
     display: flex;
     flex-direction: column;
     row-gap: 64px;
-    background: #0A0119;
+    background-color: #f5f5f7;
 }
 
 header {
@@ -23,27 +23,28 @@ header {
 }
 
 .title {
-    color: #F9F5FF;
-    font-family: Inter;
+    color: #1d1d1f;
+    font-family: Helvetica;
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    font-weight: bold;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 80px;
 }
 .nav a {
     text-decoration: none;
-    color: #fff;
+    color: #6e6e73;
 }
 
 .presentation {
-    background: #0A0119;
+    background: #f5f5f7;
     display: flex;
     align-items: center;
     gap: 20px; 
@@ -78,8 +79,8 @@ header {
 }
 
 .presentation h2 {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -87,8 +88,8 @@ header {
 }
 
 .presentation h3 {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -96,8 +97,8 @@ header {
 }
 
 .presentation p {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -112,7 +113,7 @@ header {
 .download-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6563ff;
+    background-color: #6e6e73;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -124,8 +125,8 @@ header {
 }
 
 .resume {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -134,8 +135,8 @@ header {
 }
 
 .explain {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -148,8 +149,8 @@ header {
 ;}
 
 .mail{
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -158,7 +159,7 @@ header {
 }
 
 .details {
-    background: #0A0119;
+    background: #f5f5f7;
     gap: 20px; 
     max-width: 4500px; 
     width: 100%;
@@ -166,8 +167,8 @@ header {
     align-items: center;
 }
  .details p {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -223,8 +224,8 @@ header {
 }
 
 .feel {
-    color: #FFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -232,7 +233,7 @@ header {
     text-align: center;
 }
 .academic {
-    color: #FAFBFF;
+    color: #6e6e73;
     display: flex;
     column-gap: 24px;
     justify-content: center;
@@ -244,9 +245,9 @@ header {
     align-items: flex-start;
     justify-content: center;
     border-radius: 20px;
-    background: #23274F;
+    background: #DDDEE2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
 .academic-card .header {
     display: flex;
     flex-direction: column;
@@ -273,8 +274,8 @@ header {
 }
 
 .academic-card .header h3 {
-    color: #FFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -283,8 +284,8 @@ header {
     padding-left: 16px;
 }
 .academic-card .body h2 {
-    color: #FFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -293,8 +294,8 @@ header {
 }
 
 .academic-card .body h5 {
-    color: #FFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -303,8 +304,8 @@ header {
 }
 
 .academic-card .footer p {
-    color: #FFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -329,7 +330,7 @@ header {
 }
 
 .internship {
-    background: #0A0119;
+    background: #f5f5f7;
     display: flex;
     align-items: center;
     gap: 20px; 
@@ -364,8 +365,8 @@ header {
 }
 
 .internship h2 {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -373,24 +374,24 @@ header {
 }
 
 .internship h5 {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 .internship h3 {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 .internship p {
-    color: #FAFBFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -425,7 +426,7 @@ align-items: center;
 margin-bottom: 16px;
 }
 .language h5 {
-font-family: 'Inter', sans-serif;  
+font-family: Helvetica;  
 font-size: 16px;
 font-weight: bold;
 margin-bottom: 20px;
@@ -438,8 +439,8 @@ height: 48px !important;
 }
 
 .future {
-    color: #FFF;
-    font-family: Inter;
+    color: #6e6e73;
+    font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
