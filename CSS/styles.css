@@ -322,6 +322,11 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+.language p {
+    justify-content: center;
+    text-align: center;
+}
  
 .languages svg {
     width: 36px !important;
