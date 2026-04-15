@@ -1,2 +1,2 @@
-# Diya942.github.io
+# DiyaPortefolio.github.io
 Portefolio
