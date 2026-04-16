@@ -334,31 +334,31 @@ header {
     margin: 5px;
 }
 
+/* On force l'alignement vertical (colonne) */
 .internship {
-    background: #f5f5f7;
     display: flex;
-    flex-direction: column; /* Force l'empilement vertical */
-    align-items: flex-start; /* Aligne le texte à gauche, ou center si tu préfères */
-    gap: 40px;               /* Ajoute un espace entre les deux expériences */
-    max-width: 4500px;  
+    flex-direction: column; 
+    gap: 50px; /* Espace entre Henkel et Saint-Gobain */
+    background: #f5f5f7;
     width: 100%;
+    max-width: 1200px; /* Pour éviter que ce soit trop large sur grand écran */
+    margin: 0 auto;
 }
 
-/* Optionnel : Ajuste la largeur des blocs internes pour qu'ils prennent toute la place */
-.internship > div {
+/* On s'assure que chaque bloc prend toute la largeur */
+.internship-item {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.internship-img {
-    justify-content: center;
-    align-items: center;
-}
-
+/* Ajustement de l'image de Saint-Gobain pour qu'elle ne soit pas trop géante */
 .internship-img img {
-    width: 300px;
+    width: 300px; /* Tu peux ajuster la taille ici */
     height: auto;
+    margin-bottom: 10px;
 }
-
 
 .internship > div:first-child {
     flex: 1;
