@@ -416,6 +416,14 @@ margin: 0 auto;
 
 }
 
+.project-grid-second {
+
+grid-template-columns: repeat(3, 1fr);
+
+max-width: 75%;
+
+}
+
 
 
 .project-grid .grid-item {
@@ -614,15 +622,17 @@ color: #6e6e73;
 
 font-family: Helvetica;
 
-font-size: 12px;
+font-size: 15px;
 
 font-style: normal;
 
-font-weight: 500;
+font-weight: 600;
 
 line-height: normal;
 
 text-align: center;
+
+padding: 0 16px 20px 16px;
 
 }
 
@@ -674,6 +684,7 @@ margin: 5px;
 display: flex;
 flex-direction: column;
 gap: 48px;
+margin-top: 40px;
 }
 
 .internship {
