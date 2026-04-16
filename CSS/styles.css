@@ -337,16 +337,15 @@ header {
 .internship {
     background: #f5f5f7;
     display: flex;
-    align-items: center;
-    gap: 20px; 
-    max-width: 4500px; 
+    flex-direction: column; /* Force l'empilement vertical */
+    align-items: flex-start; /* Aligne le texte à gauche, ou center si tu préfères */
+    gap: 40px;               /* Ajoute un espace entre les deux expériences */
+    max-width: 4500px;  
     width: 100%;
 }
 
+/* Optionnel : Ajuste la largeur des blocs internes pour qu'ils prennent toute la place */
 .internship > div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
     width: 100%;
 }
 
