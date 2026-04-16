@@ -1,168 +1,240 @@
-/* --- RESET & BASES --- */
+/* --- Styles Généraux --- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%; /* Sera surchargé par les containers */
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box; /* Important pour que le padding n'augmente pas la largeur */
 }
 
 body {
-    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #6e6e73;
-    background-color: #f5f5f7;
     display: flex;
     flex-direction: column;
     row-gap: 64px;
+    background-color: #f5f5f7;
 }
 
-/* --- CONTAINERS (Largeur contrôlée) --- */
-header, .presentation, .details, .academic, .project-grid, .internship-container, .skills-grid, .future, footer {
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 90%; /* Pour laisser de l'espace sur les bords */
-}
-
-/* --- NAVIGATION --- */
+/* --- Header & Navigation --- */
 header {
-    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px; 
+    width: 100%;
 }
+
 .nav {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 80px;
 }
+
 .nav a {
     text-decoration: none;
     color: #6e6e73;
     font-weight: 500;
 }
 
-/* --- PRESENTATION --- */
+/* --- Section Présentation / Contact --- */
 .presentation {
+    background: #f5f5f7;
     display: flex;
     align-items: center;
-    gap: 40px;
-}
-.title {
-    color: #1d1d1f;
-    font-size: 40px;
-    font-weight: 700;
-}
-.presentation-img img {
-    width: 300px;
-}
-
-/* --- CONTACT LINKS --- */
-.contact-links {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-.contact-links a { width: auto; }
-.contact-links svg { width: 35px; height: 35px; }
-.download-button {
-    background: #6e6e73;
-    color: white !important;
-    padding: 8px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-/* --- ABOUT --- */
-.details {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.details-img img { width: 250px; }
-
-/* --- EXPERIENCES (Structure Geodis-like) --- */
-.resume {
-    font-size: 28px;
-    color: #1d1d1f;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.internship-container {
-    display: flex;
-    flex-direction: column;
-    gap: 80px; /* Espace entre les deux expériences */
-}
-
-.experience-item {
+    gap: 20px; 
+    max-width: 1200px; 
     width: 100%;
 }
 
-.experience-content {
+.title {
+    color: #1d1d1f;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.presentation h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.presentation p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.presentation-img img {
+    width: 300px;
+    height: auto;
+}
+
+/* --- Boutons & Liens --- */
+.contact-links {
     display: flex;
-    align-items: flex-start; /* Image alignée avec le haut du texte */
-    gap: 50px; /* Espace entre logo et texte */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-links a svg {
+    width: 40px; 
+    height: auto;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6e6e73;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.download-button:hover {
+    background-color: #4341d4;
+}
+
+/* --- Titres de sections --- */
+.resume {
+    color: #6e6e73;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- Section À Propos --- */
+.details {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.details-img img {
+    width: 300px;
+    height: auto;
+}
+
+.details p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/* --- Section Expériences (Modifiée) --- */
+#pro {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.internship {
+    display: flex;
+    flex-direction: column; /* Empile Henkel et Saint-Gobain */
+    gap: 60px; /* Espace entre les deux blocs */
+    width: 100%;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start; /* Image et texte alignés en haut */
+    gap: 30px;
+    width: 100%;
 }
 
 .internship-img {
-    flex: 0 0 220px; /* Largeur fixe pour le logo */
+    flex: 0 0 250px; /* L'image garde une largeur fixe de 250px */
 }
 
 .internship-img img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .experience-text {
-    flex: 1; /* Prend tout le reste de la largeur */
+    flex: 1; /* Le texte prend toute la place restante */
 }
 
-.experience-text h2 { color: #1d1d1f; font-size: 24px; margin: 5px 0; }
-.experience-text h3 { font-size: 16px; font-weight: 600; }
-.experience-text h5 { font-size: 16px; margin-bottom: 15px; color: #86868b; }
-.experience-text p { text-align: justify; margin-bottom: 10px; font-size: 15px; }
+.experience-text h2 { font-size: 20px; color: #1d1d1f; margin-bottom: 5px; }
+.experience-text h3 { font-size: 14px; margin-bottom: 5px; }
+.experience-text h5 { font-size: 16px; margin-bottom: 10px; font-weight: bold; }
+.experience-text p { font-size: 14px; line-height: 1.8; text-align: justify; }
 
-/* --- ACADEMIC CARDS --- */
+/* --- Section Formations (Cards) --- */
 .academic {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.academic-card {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
-/* --- PROJECTS --- */
+.academic-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    background: #DDDEE2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+/* --- Grille de Projets --- */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.grid-item img {
-    border-radius: 15px;
-    margin-bottom: 10px;
-    object-fit: cover;
-    height: 180px;
-}
-.feel { text-align: center; margin-top: 30px; }
 
-/* --- SKILLS --- */
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* --- Section Compétences --- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
-.language h5 { color: #1d1d1f; margin-bottom: 15px; font-size: 18px; }
 
-/* --- MOBILE --- */
+.language h5 {
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.language svg {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
 @media screen and (max-width: 768px) {
-    .presentation, .details, .experience-content {
+    .nav { display: none; }
+    
+    .presentation, .details, .experience-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .experience-item {
         align-items: center;
     }
-    .internship-img { flex: none; width: 150px; }
-    .academic, .project-grid, .skills-grid { grid-template-columns: 1fr; }
+
+    .internship-img {
+        flex: none;
+        width: 180px;
+    }
+
+    .project-grid, .skills-grid, .academic {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
 }
