@@ -879,6 +879,16 @@ margin-bottom: 16px;
 
 }
 
+.language div img {
+
+width: 48px !important;
+
+height: 48px !important;
+
+object-fit: contain;
+
+}
+
 .language h5 {
 
 font-family: Helvetica;  
